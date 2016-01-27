@@ -1,0 +1,78 @@
+.btn {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 0;
+}
+
+.btn-primary.btn-outline {
+  color: $brown;
+}
+
+.btn-success.btn-outline {
+  color: $blue;
+}
+
+.btn-primary.btn-outline:hover,
+.btn-success.btn-outline:hover,
+.btn-info.btn-outline:hover,
+.btn-warning.btn-outline:hover,
+.btn-danger.btn-outline:hover {
+  color: white;
+}
+
+.btn-primary {
+  background-color: $brown;
+  border-color: $brown;
+  color: white;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+  background-color: darken($brown, 3%);
+  border-color: darken($brown, 3%);
+  color: white;
+}
+
+.btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+  background-image: none;
+}
+
+.btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled]:active, .btn-primary.active[disabled], fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary.active {
+  background-color: lighten($brown, 4%);
+  border-color: lighten($brown, 4%);
+}
+
+.btn-default {
+  background-color: $blue;
+  border-color: $blue;
+  color: white;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
+  background-color: $dark-blue;
+  border-color: $dark-blue;
+  color: white;
+}
+
+.btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
+  background-image: none;
+}
+
+.btn-default.disabled, .btn-default.disabled:hover, .btn-default.disabled:focus, .btn-default.disabled:active, .btn-default.disabled.active, .btn-default[disabled], .btn-default[disabled]:hover, .btn-default[disabled]:focus, .btn-default[disabled]:active, .btn-default.active[disabled], fieldset[disabled] .btn-default, fieldset[disabled] .btn-default:hover, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default:active, fieldset[disabled] .btn-default.active {
+  background-color: lighten($blue, 4%);
+  border-color: lighten($blue, 4%);
+}
+
+.btn-white {
+  background-color: white;
+  border-color: white;
+  color: #535353;
+}
+
+.btn-md {
+  padding: 10px 40px;
+}
+
+.btn-lg {
+  padding: 18px 40px;
+}

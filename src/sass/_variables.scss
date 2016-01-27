@@ -1,0 +1,50 @@
+// Font
+$font-stack: "Montserrat", Helvetica, Arial, sans-serif;
+$font-nav: "Open Sans", Helvetica, Arial, sans-serif;
+$font-article: Georgia, serif;
+
+// Basic Colors
+$brown: #94743d;               // Brown basic color
+$browny: #90713f;              // Darker brown color
+$blue: #1d6aad;                // Blue basic color
+$grey: #d5dce0;                // Grey basic color
+$light-grey: #b4b4b4;          // Lighter Grey color
+$dark-brown: #735728;          // Brown hover color
+$dark-blue: #164e7f;           // Blue hover color
+$darkest-blue: #091f31;        // Dark blue hover color
+
+// Various colors
+$light-bg: #eae3d7;            // Light background color
+$light-f2-bg: #f2f2f2;         // Lighter background color
+$light-f7-bg: #f7f7f7;         // More lighter background color
+$yellow-bg: #f9f4e7;           // Light yellow background color
+$grey-e4-bg: #e4e4e4;          // Grey background color
+$light-blue-bg: #daf5f7;       // Light blue background color
+$jumbo-overlay: #0f2e43;       // Overlay for jumbotron images
+$heading-color: #212f3f;       // Heading text
+$header-color: #a58652;        // Header text
+$text-color: #42505f;          // Body text
+$lighter-text-color: #546372;  // Location description text
+$article-color: #556372;       // Article text
+$article-video-title: #364454; // Article title with video header
+$slider-nav: #c8c8c8;          // Slider nav grey text
+$lighter-text: #2c3e50;        // Article description text
+$pagination-blue: #3498db;     // Active pagination link
+$comment-title: #2c2e37;       // Comment title
+$comment-text: #85898b;        // Comment text
+$blue-text: #2980b9;           // Blue text on About Us section
+
+//Sidebar width
+$sidebar-width: 220px;
+
+// Boxed layout width
+$boxed-width: 1200px;
+$boxed-backgound: image-url("patterns/shattered.png");
+
+//Border radius for buttons
+$btn-border-radius: 3px;
+
+//Navigation
+$nav-bg: #ffffff;
+$nav-profil-pattern: image-url("patterns/header-profile.png") no-repeat;
+$nav-text-color: #a7b1c2;

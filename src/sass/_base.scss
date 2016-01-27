@@ -1,0 +1,241 @@
+body {
+  font-family: $font-stack;
+  background-color: $nav-bg;
+  font-size: 14px;
+  color: $text-color;
+  overflow-x: hidden;
+}
+
+html, body {
+  height: 100%;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.clear {
+  display: block;
+  overflow: hidden;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.scrollable {
+  overflow: auto;
+}
+
+a {
+  cursor: pointer;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #000 !important;
+}
+
+.font-bold {
+  font-weight: 600;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-12 {
+  font-size: 12px;
+}
+
+.font-16 {
+  font-size: 16px;
+}
+
+.font-18 {
+  font-size: 18px;
+}
+
+.font-22 {
+  font-size: 22px;
+}
+
+.font-24 {
+  font-size: 24px;
+}
+
+.font-30 {
+  font-size: 30px;
+}
+
+.font-56 {
+  font-size: 56px;
+}
+
+.middle-text {
+  vertical-align: middle;
+}
+
+/* WRAPPERS */
+
+#wrapper {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  padding: 0 20px;
+}
+
+.wrapper-content {
+  padding: 20px 10px 40px;
+}
+
+.main-wrapper {
+  min-width: 1800px;
+}
+
+.page-wrapper {
+  min-width: 1440px;
+}
+
+@media (max-width: 1440px) {
+  .page-wrapper {
+    min-width: 1170px;
+    .container {
+      width: 920px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .page-wrapper {
+    min-width: 970px;
+    .container {
+      width: 720px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .page-wrapper {
+    min-width: 768px;
+    .container {
+      width: 500px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .page-wrapper {
+    min-width: 100%;
+    .container {
+      min-width: 100%;
+      width: auto;
+    }
+  }
+}
+
+/* GLOBAL  */
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.no-borders {
+  border: none !important;
+}
+
+.no-margins {
+  margin: 0 !important;
+}
+
+.no-top-border {
+  border-top: 0 !important;
+}
+
+/* BACKGROUNDS */
+
+.gray-bg {
+  background-color: $grey;
+}
+
+.white-bg {
+  background-color: #fff;
+}
+
+.light-f2-bg {
+  background-color: $light-f2-bg;
+}
+
+.light-f7-bg {
+  background-color: $light-f7-bg;
+}
+
+.light-blue-bg {
+  background-color: $light-blue-bg;
+}
+
+.yellow-bg {
+  background-color: $yellow-bg;
+}
+
+.jumbotron {
+  border-radius: 6px;
+  padding: 40px;
+}
+
+.jumbotron h1 {
+  margin-top: 0;
+}
+
+/* COLORS */
+
+.text-brown {
+  color: $brown;
+}
+
+.text-primary {
+  color: inherit;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-blue {
+  color: $blue-text;
+}
+
+.text-success {
+  color: $blue;
+}
+
+.text-muted {
+  color: #888;
+}
+
+.text-lighter-text-color {
+  color: $lighter-text-color;
+}
+
+// Bootstrap issue in 3.3.0 with modal https://github.com/twbs/bootstrap/issues/9855
+// Fix
+body.modal-open {
+  padding-right: inherit !important;
+}
+
+hr.hr-darker {
+  border-top: 1px solid #d7d7d7;
+}
+
+hr.hr-white {
+  border-top: 1px solid #fff;
+}
