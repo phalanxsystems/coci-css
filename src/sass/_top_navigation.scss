@@ -1,114 +1,110 @@
-.top-navigation {
+.header {
   padding: 20px 40px;
-  .logo {
+  position: relative;
+  .header-logo {
     text-transform: uppercase;
     color: $header-color;
     font-size: 18px;
-    background: url(../images/logo-brown.png) no-repeat;
-    display: inline-block;
-    padding-top: 30px;
-    margin-left: 25px;
-    line-height: 1;
-    .logo-chabad {
-      display: block;
-      font-size: 35px;
-      text-transform: none;
-      margin-left: -35px;
-      margin-top: -10px;
-    }
-    .logo-on-campus {
-      display: block;
-      text-align: right;
-      font-size: 14px;
-    }
-  }
-  .logo-orig {
-    text-transform: uppercase;
-    color: $header-color;
-    font-size: 18px;
+    font-weight: bold;
     background: url(../images/logo-brown.png) no-repeat;
     padding: 6px 0 6px 64px;
   }
-
-
-  .nav {
-    li {
-      display: inline-block;
-      a {
-        color: $header-color;
-        text-transform: uppercase;
-        padding: 0 5px;
-        margin-left: 40px;
-        &:hover, &:focus {
-          border-bottom: 2px solid $light-bg;
-          background: none;
-        }
-      }
-      &:first-child a {
-        margin-left: 0;
-      }
-      &.active {
-        a {
-          border-bottom: 2px solid $light-bg;
-        }
-      }
-    }
-  }
-  .navbar-toggle {
-    background: $light-bg;
-    .icon-bar {
-      background: $header-color;
-    }
-  }
-  &.nav-homepage {
+  &.header-homepage {
     position: absolute;
     z-index: 10;
     width: 100%;
-    .logo {
+    .header-logo {
       background: url(../images/logo-white.png) no-repeat;
       color: #fff;
     }
-    .praise-gd {
+    .praise-gd, .nav-toggle {
       color: #fff;
     }
-    .logo-orig {
-      background: url(../images/logo-white.png) no-repeat;
-      color: #fff;
-    }
-    .nav {
+    .nav-list {
       li {
-        a {
-          color: #fff;
-          &:hover, &:focus {
-            border-bottom: 2px solid #fff;
-          }
-        }
-        &.active {
-          a {
+        &.active, &:hover, &:focus {
+          .nav-item {
             border-bottom: 2px solid #fff;
           }
         }
       }
+      .nav-item {
+        color: #fff;
+      }
     }
   }
+}
+
+.nav-list {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  li {
+    display: inline-block;
+    &.active, &:hover, &:focus {
+      .nav-item {
+        border-bottom: 2px solid $light-bg;
+      }
+    }
+  }
+  .nav-item {
+    color: $header-color;
+    text-transform: uppercase;
+    padding: 0 5px;
+    margin-left: 4vw;
+  }
+}
+
+.nav-toggle {
+  display: none;
+  font-size: 24px;
+  color: $header-color;
+  cursor: pointer;
+}
 
 .praise-gd {
   position: absolute;
+  top: 5px;
+  right: 5px;
+  color: $header-color;
+  line-height: 1;
+}
+
+.mobile-nav {
+  display: none;
+  background: #202020;
+  position: fixed;
   top: 0;
+  bottom: 0;
   right: 0;
-  color: #a58652;
+  width: 200px;
   overflow: hidden;
-  &:after {
-    content: "ב''ה";
-    display: block;
-    width: 60px;
-    height: 60px;
-    font-size: 12px;
-    line-height: 1;
-/*  padding-top: 45px; */
-    text-align: center;
-/*  background-color: rgba(#696969, 0.8);
-    transform: rotate(45deg) translate(0px, -48px); */
+  z-index: -10;
+  .nav-list {
+    li + li {
+      margin: 20px 0 0 15px;
+    }
+    .nav-item {
+      font-size: 16px;
+      color: $light-bg;
+      text-transform: uppercase;
+      padding: 0 5px;
+      margin: 0
+    }
   }
 }
+
+.mobile-nav-opened {
+  .root-wrapper {
+    transform: translate3d(-200px, 0, 0);
+  }
+}
+
+@media (max-width: 992px) {
+  .main-nav {
+    display: none;
+  }
+  .nav-toggle, .mobile-nav {
+    display: block;
+  }
 }
