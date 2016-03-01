@@ -392,37 +392,38 @@ footer {
   }
 }
 
-.container {
-  .jumbotron-location {
-    padding: 0;
-    .container {
-      height: 550px;
+
+.jumbotron.jumbotron-location {
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  .container {
+    height: 550px;
+  }
+  .jumbo-overlay {
+    background-color: #000;
+    opacity: 0.2;
+  }
+  .location-jumbo-title {
+    position: absolute;
+    bottom: 160px;
+    h1 {
+      font-size: 60px;
     }
-    .jumbo-overlay {
-      background-color: #000;
-      opacity: 0.2;
+    span {
+      font-size: 21px;
     }
-    .location-jumbo-title {
-      position: absolute;
-      bottom: 160px;
-      h1 {
-        font-size: 60px;
-      }
-      span {
-        font-size: 21px;
-      }
-    }
-    .location-jumbo-caption {
-      position: absolute;
-      bottom: 0;
-      height: 110px;
-      width: 100%;
-      margin-left: -15px;
-      background: rgba(236, 235, 235, 0.8);
-      a {
-        font-size: 26px;
-        color: #505050;
-      }
+  }
+  .location-jumbo-caption {
+    position: absolute;
+    bottom: 0;
+    height: 110px;
+    width: 100%;
+    margin-left: -15px;
+    background: rgba(236, 235, 235, 0.8);
+    a {
+      font-size: 26px;
+      color: #505050;
     }
   }
 }

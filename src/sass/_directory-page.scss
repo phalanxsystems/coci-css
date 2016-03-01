@@ -1,0 +1,53 @@
+.detail-banner {
+  height: 100vw;
+  max-height: 70vh;
+  min-height: 300px;
+  position: relative;
+  overflow: hidden;
+
+  .image-overlay {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+
+.detail-banner-icons {
+  top: 15px;
+  right: 15px;
+}
+
+.detail-banner-caption {
+  background-color: rgba(235, 235, 235, 0.8);
+}
+
+.avatar-50 {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+
+@media (max-width: 992px) {
+  .campus-detail-header {
+    & > div {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .map-frame {
+      max-height: 350px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .detail-banner-detail {
+    padding: 10px 15px;
+    h1 {
+      font-size: 28px;
+        margin: 5px 0;
+    }
+  }
+  .detail-banner-caption {
+    padding: 10px 15px;
+    font-size: 20px;
+  }
+}
