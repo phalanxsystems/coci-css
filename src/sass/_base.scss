@@ -171,6 +171,12 @@ a:hover, a:focus {
   width: 100%;
 }
 
+.fullbleed-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* BACKGROUNDS */
 
 .gray-bg {
@@ -234,6 +240,10 @@ a:hover, a:focus {
 
 .text-lighter-text-color {
   color: $lighter-text-color;
+}
+
+.text-dark-grey {
+  color: $dark-grey;
 }
 
 // Bootstrap issue in 3.3.0 with modal https://github.com/twbs/bootstrap/issues/9855
