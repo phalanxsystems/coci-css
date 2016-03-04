@@ -294,27 +294,22 @@ footer {
   }
 }
 
-/* Comments */
-.article-comments {
-  background-color: $grey-e4-bg;
-  h3 {
-    color: $comment-title;
-    font-size: 15px;
-    text-transform: uppercase;
+.comment-iframe {
+  border: 0;
+  width: 100%
+}
+
+.comment-item {
+  border: 1px solid darken($light-f2-bg, 20%);
+  & + .comment-item {
+    border-top: 0;
   }
 }
 
-.comment {
-  color: $comment-text;
-  font-size: 12px;
-  border: 2px solid #ccc;
-  .comment-avatar {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    overflow: hidden;
-    background-color: $darkest-blue;
-  }
+.comment-item-avatar {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
 }
 
 /* Dividers */
