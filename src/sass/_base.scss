@@ -87,7 +87,7 @@ a:hover, a:focus {
 
 .root-wrapper {
   background-color: #fff;
-  transform: translate3d(0,0,0);
+  transform: translate3d(0, 0, 0);
   transition: transform 0.5s ease-in-out;
 }
 
@@ -244,6 +244,23 @@ a:hover, a:focus {
 
 .text-dark-grey {
   color: $dark-grey;
+}
+
+/* IMGs */
+
+@for $i from 1 through 10 {
+  .image-#{$i*10} {
+    width: #{$i*10}px;
+    height: #{$i*10}px;
+  }
+}
+
+[class*="image-"] {
+  object-fit: cover;
+}
+
+.rounded-img {
+  border-radius: 50%;
 }
 
 // Bootstrap issue in 3.3.0 with modal https://github.com/twbs/bootstrap/issues/9855
