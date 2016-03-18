@@ -31,7 +31,7 @@ body {
   overflow: auto;
 }
 
-a {
+a, .pointer {
   cursor: pointer;
 }
 
@@ -53,6 +53,10 @@ a:hover, a:focus {
 
 .font-12 {
   font-size: 12px;
+}
+
+.font-14 {
+  font-size: 14px;
 }
 
 .font-16 {
