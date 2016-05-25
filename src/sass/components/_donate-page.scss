@@ -66,6 +66,10 @@
   overflow: hidden;
 }
 
+.donate-page-header-img {
+  object-position: top center;
+}
+
 .donate-video-ovelay {
   background-color: rgba(15, 46, 67, 0.3);
 }
@@ -82,7 +86,7 @@
 }
 
 .donate-buttons {
-  background-color: #d3d3d3;
+  background-color: #2c3f50;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -90,11 +94,17 @@
 .donate-button {
   cursor: pointer;
   &:hover {
-    background-color: #b3b3b3;
+    background-color: #38536a;
   }
   + .donate-button {
     border-left: 2px solid #fff;
   }
+}
+
+.donate-check-or-stock-btn {
+  width: 370px;
+  border-radius: 8px;
+  background-color: rgba(#fff, .3);
 }
 
 .donate-head-title {

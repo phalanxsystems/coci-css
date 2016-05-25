@@ -228,6 +228,9 @@ a:hover, a:focus {
 
 .text-white {
   color: white;
+  &:hover {
+    color: white;
+  }
 }
 
 .text-blue {
