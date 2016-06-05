@@ -103,6 +103,15 @@
   }
 }
 
+.subnav-btn {
+  margin: 3px;
+  font-size: 14px;
+  &:focus,
+  &.active:focus {
+    outline: none;
+  }
+}
+
 @media (max-width: 992px) {
   .main-nav {
     display: none;
