@@ -379,11 +379,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    opacity: 0.5;
+    opacity: 0.65;
     transition: opacity 0.2s;
-    margin: 0 5px;
+    margin: -50px 5px;
     &:hover {
-      background-color: rgba(51, 51, 51, 0.2);
+//    background-color: rgba(51, 51, 51, 0.2);
       opacity: 1;
     }
     span {

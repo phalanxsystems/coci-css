@@ -10,6 +10,8 @@ body {
   overflow-x: hidden;
 }
 
+:focus {outline: none !important;}
+
 .block {
   display: block;
 }
