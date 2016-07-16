@@ -364,6 +364,14 @@
   }
 }
 
+.aboutus-main-text {
+  font-size: 56px;
+}
+
+.aboutus-with-img {
+  padding-left: 50px;
+}
+
 /* Slide Container */
 
 .slide-container {
@@ -381,9 +389,8 @@
     justify-content: center;
     opacity: 0.65;
     transition: opacity 0.2s;
-    margin: -50px 5px;
+    margin: 0px 5px;
     &:hover {
-//    background-color: rgba(51, 51, 51, 0.2);
       opacity: 1;
     }
     span {
@@ -417,5 +424,26 @@
     &.active, &:hover {
       color: $blue;
     }
+  }
+}
+
+@media (max-width: 992px) {
+  .aboutus-main-text {
+    font-size: 30px;
+  }
+
+  .slide-container {
+    .slide-arrow {
+      display: none !important;
+    }
+  }
+
+  .vertical-centered {
+    flex-direction: column;
+  }
+
+  .aboutus-with-img {
+    padding-top: 20px;
+    padding-left: 0;
   }
 }
