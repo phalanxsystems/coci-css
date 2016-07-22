@@ -379,8 +379,11 @@
   .slide-body {
     display: flex;
   }
+  .slide-notice {
+    display: none;
+  }
   .slide-content {
-    flex: 1;
+    flex: 3;
     margin: 0 10px;
   }
   .slide-arrow {
@@ -433,13 +436,17 @@
   }
 
   .slide-container {
+    .slide-notice {
+      display: block;
+    }
     .slide-arrow {
       display: none !important;
     }
   }
 
   .vertical-centered {
-    flex-direction: column;
+//  flex-direction: column;
+    display: block;
   }
 
   .aboutus-with-img {
